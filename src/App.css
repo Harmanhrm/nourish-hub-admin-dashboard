@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-management {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Additional spacing */
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensures the rounded corners include children elements */
+}
+
+th {
+  background-color: #4CAF50; /* Darker shade for headers */
+  color: white;
+  text-align: left;
+  padding: 15px 10px; /* More padding for a better visual */
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid #f0f0f0; /* Lighter border for rows */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Hover effect for rows */
+}
+
+th, td {
+  text-align: left;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Slightly darker on hover */
+}
+.review-management {
+  padding: 20px;
+}
+
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.review-table th,
+.review-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.review-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal-content input,
+.modal-content select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 4px;
+}
